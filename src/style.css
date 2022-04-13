@@ -6,6 +6,7 @@ body {
     margin: 0;
     background-color: #0B2434;
     padding: 20px;
+    font-family: 'Karla', sans-serif;
 }
 
 #root {
@@ -48,12 +49,29 @@ main {
     border-radius: 10px;
 }
 
+.die-num {
+    font-size: 2rem;
+}
+
 .roll-dice {
     height: 50px;
     width: 100px;
-    display: block;
+    border: none;
+    border-radius: 6px;
+    background-color: #5035FF;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Karla', sans-serif;
     margin: 2em;
-    /* border */
+    cursor: pointer;
+}
+
+.roll-dice:focus {
+    outline: none;
+}
+
+.roll-dice:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
 
 @media screen and (max-width:680px) {
