@@ -1,10 +1,10 @@
 // import React from "react"
 
 
-export default function Dice() {
+export default function Die(props) {
     return (
         <div className="dice">
-            <p>1</p>
+            <h2>{props.value}</h2>
         </div>
     )
 }

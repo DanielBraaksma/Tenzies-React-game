@@ -6,19 +6,27 @@ body {
     margin: 0;
     background-color: #0B2434;
     padding: 20px;
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
 }
 
-main {
-    background-color: #F5F5F5;
-    height: 400px;
-    max-width: 800px;
-    border-radius: 5px;
+#root {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+}
+
+
+main {
+    background-color: #F5F5F5;
+    /* height: 400px; */
+    max-width: 800px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
 }
 
 .dice-container {
@@ -37,5 +45,27 @@ main {
     height: 100px;
     background: #FFFFFF;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.roll-dice {
+    height: 50px;
+    width: 100px;
+    display: block;
+    margin: 2em;
+    /* border */
+}
+
+@media screen and (max-width:680px) {
+    .dice-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .dice {
+        width: 50px;
+        height: 50px;
+    }
 }
